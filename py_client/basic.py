@@ -1,13 +1,12 @@
 import requests
 
-endpoint1 = "https://httpbin.org/status/200"
-endpoint = "https://httpbin.org/anything"
+endpoint1 = "http://127.0.0.1:8000/"
 
 
-response = requests.get(endpoint, json={"query":"Hello world!"})
+response = requests.get(endpoint1)
 
 
-print(response.json())
+print(response.text)
 
 
 # HTTP Request -> HTML
